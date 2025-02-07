@@ -34,3 +34,5 @@ COPY --from=builder /opt/conda/lib/python3.11/site-packages /opt/conda/lib/pytho
 # To test this container locally, run:
 # docker build -t naturf .
 # docker run --rm -p 8888:8888 naturf
+
+COPY notebooks /home/jovyan/notebooks
